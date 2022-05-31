@@ -32,14 +32,14 @@ namespace Oxide.Plugins
         {
             permission.RegisterPermission(permAdmin, this);
             permission.RegisterPermission(permDefault, this);
-            print("[LOG] DLCManager (1.1.2): Sucessfully Loaded");
+            Debug.Log("[LOG] DLCManager (1.1.2): Sucessfully Loaded");
         }
         
         private void OnServerInitialized()
         {
             GiveDLC();
             CheckPlayers();
-            print("[LOG] DLCManager (1.1.2): Sucessfully Initialized");
+            Debug.Log("[LOG] DLCManager (1.1.2): Sucessfully Initialized");
         }
         
         private void OnPlayerConnected(BasePlayer player)
